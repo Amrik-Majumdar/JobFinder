@@ -11,7 +11,7 @@
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
-          "value": "https://amrik-majumdar.github.io"
+          "value": "*"
         },
         {
           "key": "Access-Control-Allow-Methods",
@@ -20,10 +20,6 @@
         {
           "key": "Access-Control-Allow-Headers",
           "value": "Content-Type, Authorization, Content-Disposition"
-        },
-        {
-          "key": "Access-Control-Allow-Credentials",
-          "value": "true"
         }
       ]
     }
