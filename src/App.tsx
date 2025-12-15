@@ -9,7 +9,7 @@ function App() {
   const [jobs, setJobs] = useState<Job[]>([])
 
   return (
-    <BrowserRouter basename="/Joby">
+    <BrowserRouter basename="/JobFinder">
       <div className="min-h-screen">
         <Routes>
           <Route

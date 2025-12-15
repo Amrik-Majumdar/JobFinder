@@ -25,7 +25,7 @@ export default defineConfig({
       },
     },
   ],
-  base: '/Joby/',
+  base: '/JobFinder/',
   build: {
     outDir: 'dist',
   },
