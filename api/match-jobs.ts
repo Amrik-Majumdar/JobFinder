@@ -76,6 +76,8 @@ export default async function handler(
     return res.status(200).json(matchedJobs)
   } catch (error: any) {
     console.error('Error matching jobs:', error)
+    // Ensure CORS headers are set even on error
+    res.setHeader('Access-Control-Allow-Origin', '*')
     return res.status(500).json({
       message: 'Failed to match jobs',
       error: error.message,

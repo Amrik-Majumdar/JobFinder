@@ -103,6 +103,8 @@ export default async function handler(
     return res.status(200).json({ skills })
   } catch (error: any) {
     console.error('Error analyzing resume:', error)
+    // Ensure CORS headers are set even on error
+    res.setHeader('Access-Control-Allow-Origin', '*')
     return res.status(500).json({
       message: 'Failed to analyze resume',
       error: error.message,
